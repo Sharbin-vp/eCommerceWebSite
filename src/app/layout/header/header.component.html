@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container px-5">
+        <a style="font-size: 25px; font-style: italic; font-weight: bold;" class="navbar-brand" href="index.html"><i
+                style="font-size: 30px; margin-right: 10px;" class="fa-solid fa-truck-fast"></i>
+            Shopping Cart</a>
+
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0  ms-lg-4">
+                <li>
+                    <div class="form-group">
+                        <input [(ngModel)]="searchterm" (keyup)="search($event)"  style="width: 450px; margin-left: 100px;" type="text" class="form-control"
+                            placeholder="search Products">
+                    </div>
+                </li>
+                <li class="nav-item"><a
+                        style="margin-left: 30px; font-weight: 9px; font-family: Verdana, Geneva, Tahoma, sans-serif;"
+                        class="nav-link" href="products/addProduct">Add New Product</a></li>
+            </ul>
+            <form class="d-flex">
+                <button class="btn btn-outline-warning" type="submit">
+                    <i class="bi-cart-fill me-1"> Cart</i>
+
+
+                    <span class="badge bg-dark text-white ms-1 rounded-pill">0</span></button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+
+<header class="bg-dark py-5">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center justify-content-center">
+            <div class="col-lg-8 col-xl-7 col-xxl-6">
+                <div class="my-5 text-center text-xl-start">
+                    <h1 class="display-5 fw-bolder text-white mb-2">You can have anything you want in life if you dress
+                        for it </h1>
+                    <p class="lead fw-normal text-white-50 mb-4">"You gotta have style. It helps you get down the
+                        stairs. It helps you get up in the morning. It’s a way of life. Without it, you’re nobody. I’m
+                        not talking about lots of clothes.” —Diana Vreeland</p>
+                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                        <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5"
+                    src="https://i.im.ge/2022/08/20/OI10n4.depositphotos-107176748-stock-photo-fashion-portrait-of-three-stylish.jpg"
+                    alt="..." /></div>
+        </div>
+    </div>
+</header>

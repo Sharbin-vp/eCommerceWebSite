@@ -1,0 +1,71 @@
+<div class="container-fluid">
+  <div class="container d-flex form-group m-3">
+    <form [formGroup]="addProductForm" (ngSubmit)="addProduct()">
+      <h3 style="margin: left 30px;">Add Product</h3>
+  
+
+      <div class="form-outline">
+        <input type="text" name="id" formControlName="id" id="form6Example1" class="form-control" />
+        <label class="form-label" for="form6Example1">Id</label>
+      </div>
+
+
+      <div class="form-outline">
+        <input type="text" name="productName" formControlName="productName" id="form6Example2" class="form-control" />
+        <label class="form-label" for="form6Example2">Product Name</label>
+      </div>
+
+
+
+
+      <div class="form-outline mb-4">
+        <input type="text" name="categoryId" formControlName="categoryId" id="form6Example3" class="form-control" />
+        <label class="form-label" for="form6Example3">Catogory Id</label>
+      </div>
+
+
+      <div class="form-outline mb-4">
+        <input type="text" name="description" formControlName="description" id="form6Example4" class="form-control" />
+        <label class="form-label" for="form6Example4">Description</label>
+      </div>
+
+      <div class="form-outline mb-4">
+        <input type="text" name="price" formControlName="price" id="form6Example4" class="form-control" />
+        <label class="form-label" for="form6Example4">Price</label>
+      </div>
+ 
+      <div class="form-outline mb-4">
+        <input type="text" name="is_avilable" formControlName="is_avilable" id="form6Example4" class="form-control" />
+        <label class="form-label" for="form6Example4">Is Available</label>
+      </div>
+     
+      <div class="form-outline mb-4">
+        <input type="text" name="productImg" formControlName="productImg" id="form6Example4" class="form-control" />
+        <label class="form-label" for="form6Example4">Product Image</label>
+      </div>
+
+      <div class="form-outline mb-4">
+        <input type="text" name="rating" formControlName="rating" id="form6Example4" class="form-control" />
+        <label class="form-label" for="form6Example4">Rateing</label>
+      </div>
+    
+      <div class="form-outline mb-4">
+        <input type="text" name="review" formControlName="review" id="form6Example4" class="form-control" />
+        <label class="form-label" for="form6Example4">Review</label>
+      </div>
+
+      <div class="form-outline mb-4">
+        <input type="text" name="vendor_name" formControlName="vendor_name" id="form6Example4" class="form-control" />
+        <label class="form-label" for="form6Example4">Vender Name</label>
+      </div>
+   
+      <div class="form-outline mb-4">
+        <input type="text" name="warranty" formControlName="warranty" id="form6Example4" class="form-control" />
+        <label class="form-label" for="form6Example4">Warranty</label>
+      </div>
+
+
+      <button type="submit" class="btn btn-primary btn-block mb-4">Place order</button>
+    </form>
+  </div>
+</div>
